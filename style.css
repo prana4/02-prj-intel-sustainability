@@ -1,1 +1,446 @@
-/* Add your CSS here */
+/* ===========================
+   CSS RESET & BASE STYLES
+   =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Intel Brand Colors */
+  --intel-blue: #0071c5;
+  --intel-dark-blue: #003c71;
+  --intel-light-blue: #00c7fd;
+  --white: #ffffff;
+  --light-gray: #f5f5f5;
+  --medium-gray: #e0e0e0;
+  --dark-gray: #333333;
+  --text-color: #2c2c2c;
+  
+  /* Spacing */
+  --nav-height: 70px;
+  --card-width: 350px;
+  --card-gap: 20px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--light-gray);
+}
+
+/* ===========================
+   NAVIGATION BAR
+   =========================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--intel-dark-blue);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  height: var(--nav-height);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--intel-light-blue);
+}
+
+/* ===========================
+   HERO SECTION
+   =========================== */
+.hero {
+  margin-top: var(--nav-height);
+  background: linear-gradient(135deg, var(--intel-blue) 0%, var(--intel-dark-blue) 100%);
+  color: var(--white);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-logo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-description {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+/* ===========================
+   TIMELINE SECTION
+   =========================== */
+.timeline-section {
+  padding: 60px 0;
+  background-color: var(--white);
+}
+
+.timeline-container {
+  display: flex;
+  gap: var(--card-gap);
+  padding: 20px 40px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  
+  /* Scroll Snap for smooth card navigation */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  
+  /* Custom scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: var(--intel-blue) var(--medium-gray);
+}
+
+/* Webkit scrollbar styling */
+.timeline-container::-webkit-scrollbar {
+  height: 12px;
+}
+
+.timeline-container::-webkit-scrollbar-track {
+  background: var(--medium-gray);
+  border-radius: 10px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb {
+  background: var(--intel-blue);
+  border-radius: 10px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb:hover {
+  background: var(--intel-dark-blue);
+}
+
+/* ===========================
+   TIMELINE CARDS
+   =========================== */
+.timeline-card {
+  flex: 0 0 var(--card-width);
+  min-width: var(--card-width);
+  background: var(--white);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid var(--medium-gray);
+  
+  /* Scroll Snap Alignment */
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.timeline-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 113, 197, 0.2);
+  border-color: var(--intel-blue);
+}
+
+.card-year {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--intel-blue);
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+  margin-bottom: 15px;
+  min-height: 60px;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: var(--light-gray);
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.timeline-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-description {
+  opacity: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.timeline-card:hover .card-description {
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+.timeline-footer {
+  background-color: var(--intel-dark-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1rem;
+}
+
+.timeline-footer p {
+  margin: 0;
+}
+
+/* ===========================
+   MEDIA QUERIES - TABLET
+   =========================== */
+@media screen and (max-width: 1024px) {
+  :root {
+    --card-width: 300px;
+    --card-gap: 15px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+  }
+  
+  .nav-links {
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    font-size: 14px;
+  }
+  
+  .card-year {
+    font-size: 2rem;
+  }
+  
+  .card-title {
+    font-size: 1.3rem;
+    min-height: 50px;
+  }
+  
+  .card-image {
+    height: 180px;
+  }
+  
+  .timeline-container {
+    padding: 20px 20px;
+  }
+}
+
+/* ===========================
+   MEDIA QUERIES - MOBILE
+   =========================== */
+@media screen and (max-width: 768px) {
+  :root {
+    --nav-height: 60px;
+    --card-width: 280px;
+    --card-gap: 12px;
+  }
+  
+  .navbar {
+    height: var(--nav-height);
+  }
+  
+  .nav-logo {
+    height: 30px;
+  }
+  
+  .nav-links {
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    font-size: 12px;
+  }
+  
+  .hero {
+    padding: 50px 15px;
+  }
+  
+  .hero-logo {
+    height: 45px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .timeline-section {
+    padding: 40px 0;
+  }
+  
+  .timeline-container {
+    padding: 15px 15px;
+    gap: var(--card-gap);
+  }
+  
+  .timeline-card {
+    padding: 20px;
+  }
+  
+  .card-year {
+    font-size: 1.8rem;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    min-height: 45px;
+  }
+  
+  .card-image {
+    height: 160px;
+  }
+  
+  .card-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .timeline-footer {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ===========================
+   MEDIA QUERIES - SMALL MOBILE
+   =========================== */
+@media screen and (max-width: 480px) {
+  :root {
+    --card-width: 260px;
+  }
+  
+  .nav-container {
+    padding: 0 15px;
+  }
+  
+  .nav-links {
+    gap: 10px;
+  }
+  
+  .nav-links a {
+    font-size: 11px;
+  }
+  
+  .hero-title {
+    font-size: 1.6rem;
+  }
+  
+  .hero-description {
+    font-size: 0.9rem;
+  }
+  
+  .timeline-container {
+    padding: 10px;
+  }
+  
+  .timeline-card {
+    padding: 15px;
+  }
+  
+  .card-year {
+    font-size: 1.6rem;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+  }
+  
+  .card-image {
+    height: 140px;
+  }
+  
+  .card-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===========================
+   ACCESSIBILITY
+   =========================== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .timeline-container {
+    scroll-behavior: auto;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+a:focus,
+.timeline-card:focus {
+  outline: 3px solid var(--intel-light-blue);
+  outline-offset: 2px;
+}
