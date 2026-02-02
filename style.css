@@ -1,6 +1,4 @@
-/* ===========================
-   CSS RESET & BASE STYLES
-   =========================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -116,9 +114,8 @@ body {
   opacity: 0.95;
 }
 
-/* ===========================
-   TIMELINE SECTION
-   =========================== */
+/*Timelines section*/
+
 .timeline-section {
   padding: 60px 0;
   background-color: var(--white);
@@ -159,9 +156,8 @@ body {
   background: var(--intel-dark-blue);
 }
 
-/* ===========================
-   TIMELINE CARDS
-   =========================== */
+/* Timeline Cards*/
+
 .timeline-card {
   flex: 0 0 var(--card-width);
   min-width: var(--card-width);
@@ -230,9 +226,6 @@ body {
   transition: 0.5s ease-in;
 }
 
-/* ===========================
-   FOOTER
-   =========================== */
 .timeline-footer {
   background-color: var(--intel-dark-blue);
   color: var(--white);
@@ -245,9 +238,7 @@ body {
   margin: 0;
 }
 
-/* ===========================
-   MEDIA QUERIES - TABLET
-   =========================== */
+/* Media Query: Tablet */
 @media screen and (max-width: 1024px) {
   :root {
     --card-width: 300px;
@@ -370,9 +361,7 @@ body {
   }
 }
 
-/* ===========================
-   MEDIA QUERIES - SMALL MOBILE
-   =========================== */
+/* Media Query: Mobile */
 @media screen and (max-width: 480px) {
   :root {
     --card-width: 260px;
@@ -423,9 +412,6 @@ body {
   }
 }
 
-/* ===========================
-   ACCESSIBILITY
-   =========================== */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
