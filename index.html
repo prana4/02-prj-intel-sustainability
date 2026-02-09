@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+  
+  <!-- Bootstrap CSS - LTR by default, will be switched to RTL by script -->
+  <link id="bootstrap-css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,6 +21,8 @@
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#sustainability">Sustainability</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
       </ul>
     </div>
   </nav>
@@ -43,7 +51,7 @@
         <h2 class="card-year">1968</h2>
         <h3 class="card-title">Intel Founded</h3>
         <div class="card-image">
-          <img src="img/1.jpg" alt="Intel 1968 Logo" />
+          <img src="img/1.jpg" alt="Intel 1968 Logo showing the founding of Intel Corporation" />
         </div>
         <p class="card-description">
           Robert Noyce and Gordon Moore rename the newly formed company 
@@ -57,7 +65,7 @@
         <h2 class="card-year">1971</h2>
         <h3 class="card-title">First Microprocessor</h3>
         <div class="card-image">
-          <img src="img/2.jpg" alt="Intel 4004 Microprocessor" />
+          <img src="img/2.jpg" alt="Intel 4004 Microprocessor, the world's first commercial microprocessor" />
         </div>
         <p class="card-description">
           Intel debuts the 4004, the world's first commercial microprocessor, 
@@ -71,7 +79,7 @@
         <h2 class="card-year">1978</h2>
         <h3 class="card-title">8086 Processor</h3>
         <div class="card-image">
-          <img src="img/3.jpg" alt="Intel 8086 Processor" />
+          <img src="img/3.jpg" alt="Intel 8086 Processor establishing the x86 architecture" />
         </div>
         <p class="card-description">
           Launch of the 8086 processor, establishing the x86 architecture 
@@ -84,7 +92,7 @@
         <h2 class="card-year">1985</h2>
         <h3 class="card-title">386 Processor</h3>
         <div class="card-image">
-          <img src="img/4.jpg" alt="Intel 386 Processor" />
+          <img src="img/4.jpg" alt="Intel 386 Processor with 32-bit architecture" />
         </div>
         <p class="card-description">
           Intel introduces the 386 processor with 32-bit architecture, 
@@ -98,7 +106,7 @@
         <h2 class="card-year">2006</h2>
         <h3 class="card-title">Peak GHG Emissions</h3>
         <div class="card-image">
-          <img src="img/5.jpg" alt="Intel Sustainability" />
+          <img src="img/5.jpg" alt="Intel Sustainability initiatives to reduce greenhouse gas emissions" />
         </div>
         <p class="card-description">
           This year marks Intel's highest annual greenhouse gas emissions 
@@ -113,7 +121,7 @@
         <h2 class="card-year">2020</h2>
         <h3 class="card-title">RISE Strategy</h3>
         <div class="card-image">
-          <img src="img/6.jpg" alt="Intel RISE Strategy" />
+          <img src="img/6.jpg" alt="Intel RISE Strategy for responsible and sustainable technology" />
         </div>
         <p class="card-description">
           Intel launches its RISE (Responsible, Inclusive, Sustainable, 
@@ -127,7 +135,7 @@
         <h2 class="card-year">2022</h2>
         <h3 class="card-title">Net-Zero By 2040</h3>
         <div class="card-image">
-          <img src="img/7.jpg" alt="Intel Net-Zero Commitment" />
+          <img src="img/7.jpg" alt="Intel Net-Zero Commitment to achieve zero greenhouse gas emissions by 2040" />
         </div>
         <p class="card-description">
           Intel announces its commitment to achieve net-zero greenhouse 
@@ -141,7 +149,7 @@
         <h2 class="card-year">2023</h2>
         <h3 class="card-title">Renewable Electricity</h3>
         <div class="card-image">
-          <img src="img/8.jpg" alt="Intel Renewable Energy" />
+          <img src="img/8.jpg" alt="Intel Renewable Energy facilities achieving 99% renewable electricity" />
         </div>
         <p class="card-description">
           The company achieves 99% renewable electricity usage worldwide, 
@@ -155,7 +163,7 @@
         <h2 class="card-year">2024</h2>
         <h3 class="card-title">Sustainability Summit</h3>
         <div class="card-image">
-          <img src="img/9.jpg" alt="Intel Sustainability Summit" />
+          <img src="img/9.jpg" alt="Intel Sustainability Summit bringing together industry leaders" />
         </div>
         <p class="card-description">
           Intel hosts its first Sustainability Summit, uniting suppliers, 
@@ -172,5 +180,443 @@
     <p>Scroll to view timeline | Hover over cards to learn more!</p>
   </footer>
 
+  <!-- Three-Column Section using Bootstrap -->
+  <section id="sustainability" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 display-5 fw-bold text-primary">Our Sustainability Pillars</h2>
+      
+      <div class="row g-4">
+        <!-- Column 1: Climate Action -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm hover-card">
+            <div class="card-body text-center p-4">
+              <div class="icon-circle mb-3 mx-auto">
+                <i class="bi bi-globe2 fs-1 text-primary"></i>
+              </div>
+              <h3 class="card-title h4 mb-3">Climate Action</h3>
+              <p class="card-text text-muted">
+                We're committed to achieving net-zero greenhouse gas emissions across our global operations by 2040, while investing in renewable energy and energy-efficient manufacturing processes.
+              </p>
+              <a href="#" class="btn btn-outline-primary mt-3">
+                Learn More <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Water Stewardship -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm hover-card">
+            <div class="card-body text-center p-4">
+              <div class="icon-circle mb-3 mx-auto">
+                <i class="bi bi-droplet-fill fs-1 text-primary"></i>
+              </div>
+              <h3 class="card-title h4 mb-3">Water Stewardship</h3>
+              <p class="card-text text-muted">
+                Our water conservation efforts focus on returning 100% of water used in our operations back to communities, ensuring sustainable water management for future generations.
+              </p>
+              <a href="#" class="btn btn-outline-primary mt-3">
+                Learn More <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Waste Reduction -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm hover-card">
+            <div class="card-body text-center p-4">
+              <div class="icon-circle mb-3 mx-auto">
+                <i class="bi bi-recycle fs-1 text-primary"></i>
+              </div>
+              <h3 class="card-title h4 mb-3">Waste Reduction</h3>
+              <p class="card-text text-muted">
+                Through innovative recycling programs and circular economy practices, we aim to achieve zero waste to landfill across our manufacturing operations while reducing overall waste generation.
+              </p>
+              <a href="#" class="btn btn-outline-primary mt-3">
+                Learn More <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Subscription Section -->
+  <section id="newsletter" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card border-0 shadow">
+            <div class="card-body p-5">
+              <h2 class="text-center mb-3 display-6 fw-bold text-primary">Stay Updated on Our Sustainability Journey</h2>
+              <p class="text-center text-muted mb-4">
+                Subscribe to receive the latest updates on Intel's environmental initiatives, technological innovations, and sustainability milestones.
+              </p>
+              
+              <form id="newsletterForm" class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <!-- Name Field -->
+                  <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="firstName" 
+                      name="firstName"
+                      placeholder="Enter your first name"
+                      required
+                      aria-required="true"
+                      aria-describedby="firstNameHelp"
+                    />
+                    <div class="invalid-feedback">
+                      Please enter your first name.
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="lastName" 
+                      name="lastName"
+                      placeholder="Enter your last name"
+                      required
+                      aria-required="true"
+                      aria-describedby="lastNameHelp"
+                    />
+                    <div class="invalid-feedback">
+                      Please enter your last name.
+                    </div>
+                  </div>
+
+                  <!-- Email Field -->
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <i class="bi bi-envelope"></i>
+                      </span>
+                      <input 
+                        type="email" 
+                        class="form-control" 
+                        id="email" 
+                        name="email"
+                        placeholder="your.email@example.com"
+                        required
+                        aria-required="true"
+                        aria-describedby="emailHelp"
+                      />
+                      <div class="invalid-feedback">
+                        Please enter a valid email address.
+                      </div>
+                    </div>
+                    <div id="emailHelp" class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
+
+                  <!-- Interests Checkboxes -->
+                  <div class="col-12">
+                    <label class="form-label">Areas of Interest</label>
+                    <div class="form-check">
+                      <input 
+                        class="form-check-input" 
+                        type="checkbox" 
+                        value="climate" 
+                        id="interestClimate"
+                        name="interests"
+                      />
+                      <label class="form-check-label" for="interestClimate">
+                        Climate Action & Net-Zero Initiatives
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input 
+                        class="form-check-input" 
+                        type="checkbox" 
+                        value="water" 
+                        id="interestWater"
+                        name="interests"
+                      />
+                      <label class="form-check-label" for="interestWater">
+                        Water Conservation & Stewardship
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input 
+                        class="form-check-input" 
+                        type="checkbox" 
+                        value="waste" 
+                        id="interestWaste"
+                        name="interests"
+                      />
+                      <label class="form-check-label" for="interestWaste">
+                        Waste Reduction & Circular Economy
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                      <i class="bi bi-envelope-check me-2"></i>Subscribe Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <!-- Success Message (hidden by default) -->
+              <div id="successMessage" class="alert alert-success mt-4 d-none" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i>
+                Thank you for subscribing! You'll receive updates on Intel's sustainability initiatives.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Company Info -->
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img src="img/intel-header-logo.svg" alt="Intel Logo" class="mb-3" style="height: 50px; filter: brightness(0) invert(1);" />
+          <p class="text-muted">
+            Leading the technology industry forward with sustainable innovation and responsible manufacturing practices.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#hero" class="text-muted text-decoration-none hover-link">
+                <i class="bi bi-chevron-right"></i> Home
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="#timeline" class="text-muted text-decoration-none hover-link">
+                <i class="bi bi-chevron-right"></i> Timeline
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="#sustainability" class="text-muted text-decoration-none hover-link">
+                <i class="bi bi-chevron-right"></i> Sustainability Pillars
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="#newsletter" class="text-muted text-decoration-none hover-link">
+                <i class="bi bi-chevron-right"></i> Newsletter
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="col-lg-4">
+          <h5 class="mb-3">Legal</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#" class="text-muted text-decoration-none hover-link">Privacy Policy</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-muted text-decoration-none hover-link">Terms of Use</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-muted text-decoration-none hover-link">Cookie Policy</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-muted text-decoration-none hover-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="my-4 bg-secondary" />
+
+      <!-- Copyright -->
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p class="text-muted mb-0">
+            &copy; 2024 Intel Corporation. All rights reserved.
+          </p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="text-muted me-3" aria-label="Facebook">
+            <i class="bi bi-facebook fs-5"></i>
+          </a>
+          <a href="#" class="text-muted me-3" aria-label="Twitter">
+            <i class="bi bi-twitter-x fs-5"></i>
+          </a>
+          <a href="#" class="text-muted me-3" aria-label="LinkedIn">
+            <i class="bi bi-linkedin fs-5"></i>
+          </a>
+          <a href="#" class="text-muted" aria-label="YouTube">
+            <i class="bi bi-youtube fs-5"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Form Validation Script -->
+  <script>
+    // Form validation
+    (function() {
+      'use strict';
+      
+      const form = document.getElementById('newsletterForm');
+      const successMessage = document.getElementById('successMessage');
+      
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        
+        if (form.checkValidity()) {
+          // Show success message
+          successMessage.classList.remove('d-none');
+          
+          // Reset form
+          form.reset();
+          form.classList.remove('was-validated');
+          
+          // Hide success message after 5 seconds
+          setTimeout(function() {
+            successMessage.classList.add('d-none');
+          }, 5000);
+        } else {
+          form.classList.add('was-validated');
+        }
+      }, false);
+    })();
+  </script>
+  
+  <!-- RTL Auto-Detection Script (Level Up Feature) -->
+  <script>
+    /**
+     * RTL Auto-Detection for Bootstrap
+     * Detects language changes and switches between Bootstrap LTR/RTL CSS
+     */
+    (function() {
+      'use strict';
+      
+      // RTL language codes
+      const RTL_LANGS = ['ar', 'he', 'iw', 'fa', 'ur', 'yi', 'ji', 'ps', 'sd', 'ug'];
+      
+      // Bootstrap CSS URLs
+      const BOOTSTRAP_LTR = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css';
+      const BOOTSTRAP_RTL = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css';
+      
+      /**
+       * Check if text content contains RTL characters
+       */
+      function hasRTLContent() {
+        const text = document.body.innerText || '';
+        // Arabic, Hebrew, Persian character ranges
+        return /[\u0600-\u06FF\u0750-\u077F\u0590-\u05FF]/.test(text);
+      }
+      
+      /**
+       * Check if language attribute indicates RTL
+       */
+      function hasRTLLang() {
+        const lang = (document.documentElement.lang || document.body.lang || '').toLowerCase();
+        const baseLang = lang.split('-')[0];
+        return RTL_LANGS.includes(baseLang);
+      }
+      
+      /**
+       * Switch Bootstrap CSS and dir attribute
+       */
+      function applyDirection(isRTL) {
+        const html = document.documentElement;
+        const currentDir = html.getAttribute('dir');
+        const newDir = isRTL ? 'rtl' : 'ltr';
+        
+        // Only update if changed
+        if (currentDir !== newDir) {
+          // Update dir attribute
+          html.setAttribute('dir', newDir);
+          
+          // Switch Bootstrap CSS
+          const bootstrapLink = document.getElementById('bootstrap-css');
+          if (bootstrapLink) {
+            const newHref = isRTL ? BOOTSTRAP_RTL : BOOTSTRAP_LTR;
+            if (bootstrapLink.href !== newHref) {
+              bootstrapLink.href = newHref;
+              console.log(`✅ Switched to Bootstrap ${newDir.toUpperCase()}`);
+            }
+          }
+        }
+      }
+      
+      /**
+       * Check and update direction
+       */
+      function checkDirection() {
+        const shouldBeRTL = hasRTLContent() || hasRTLLang();
+        applyDirection(shouldBeRTL);
+      }
+      
+      /**
+       * Setup observers
+       */
+      function init() {
+        console.log('🚀 RTL Auto-Detection Active');
+        
+        // Initial check
+        checkDirection();
+        
+        // Watch for DOM changes (Google Translate modifies DOM)
+        const observer = new MutationObserver(function() {
+          checkDirection();
+        });
+        
+        // Observe body for text changes
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+          characterData: true,
+          attributes: true,
+          attributeFilter: ['lang', 'class']
+        });
+        
+        // Also observe html element
+        observer.observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ['lang', 'class']
+        });
+        
+        // Aggressive checking for first 10 seconds
+        let checks = 0;
+        const interval = setInterval(function() {
+          checkDirection();
+          checks++;
+          if (checks >= 20) clearInterval(interval); // Stop after 10 seconds
+        }, 500);
+        
+        // Regular interval check
+        setInterval(checkDirection, 2000);
+      }
+      
+      // Initialize
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+      
+    })();
+  </script>
 </body>
 </html>
